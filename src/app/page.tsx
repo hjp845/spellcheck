@@ -38,7 +38,7 @@ export default function Home() {
           검사하기
         </button>
         {result && (
-          <div className="mt-6 bg-gray-100 p-4 rounded border">
+          <div className="mt-6 bg-gray-600 p-4 rounded border">
             <h2 className="font-semibold mb-2">결과:</h2>
             <p>{result}</p>
           </div>
