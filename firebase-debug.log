@@ -1,13 +1,90 @@
-[debug] [2025-04-23T10:02:24.513Z] ----------------------------------------------------------------------
-[debug] [2025-04-23T10:02:24.516Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tlfgq\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
-[debug] [2025-04-23T10:02:24.516Z] CLI Version:   14.2.0
-[debug] [2025-04-23T10:02:24.516Z] Platform:      win32
-[debug] [2025-04-23T10:02:24.516Z] Node Version:  v22.13.1
-[debug] [2025-04-23T10:02:24.517Z] Time:          Wed Apr 23 2025 19:02:24 GMT+0900 (대한민국 표준시)
-[debug] [2025-04-23T10:02:24.517Z] ----------------------------------------------------------------------
+[debug] [2025-04-23T11:04:21.521Z] ----------------------------------------------------------------------
+[debug] [2025-04-23T11:04:21.524Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tlfgq\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-04-23T11:04:21.524Z] CLI Version:   14.2.0
+[debug] [2025-04-23T11:04:21.525Z] Platform:      win32
+[debug] [2025-04-23T11:04:21.525Z] Node Version:  v22.13.1
+[debug] [2025-04-23T11:04:21.525Z] Time:          Wed Apr 23 2025 20:04:21 GMT+0900 (대한민국 표준시)
+[debug] [2025-04-23T11:04:21.525Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-04-23T10:02:24.520Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
- 
-[debug] [2025-04-23T10:02:25.056Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2025-04-23T10:02:25.057Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-04-23T11:04:21.533Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-23T11:04:21.533Z] > authorizing via signed-in user (hjp845@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\tlfgq\OneDrive\vscode_eng_2\spell_site\my-spellcheck-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-23T11:04:48.177Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:48.177Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:48.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-23T11:04:49.044Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-23T11:04:49.044Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project spellcheck-64304 (spellcheck) 
+[info] 
+=== Functions Setup
+[debug] [2025-04-23T11:04:55.211Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-23T11:04:55.211Z] > authorizing via signed-in user (hjp845@gmail.com)
+[debug] [2025-04-23T11:04:55.211Z] [iam] checking project spellcheck-64304 for permissions ["firebase.projects.get"]
+[debug] [2025-04-23T11:04:55.211Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:55.211Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:55.211Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spellcheck-64304:testIamPermissions [none]
+[debug] [2025-04-23T11:04:55.211Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spellcheck-64304:testIamPermissions x-goog-quota-user=projects/spellcheck-64304
+[debug] [2025-04-23T11:04:55.212Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spellcheck-64304:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-23T11:04:56.070Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spellcheck-64304:testIamPermissions 200
+[debug] [2025-04-23T11:04:56.070Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spellcheck-64304:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-23T11:04:56.071Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:56.071Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:56.071Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:56.071Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:56.071Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-23T11:04:56.071Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/spellcheck-64304
+[debug] [2025-04-23T11:04:56.072Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-23T11:04:56.072Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/spellcheck-64304
+[debug] [2025-04-23T11:04:57.268Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-23T11:04:57.269Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-23T11:04:57.325Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-23T11:04:57.326Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-04-23T11:04:57.326Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:57.326Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:04:57.326Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-04-23T11:04:57.326Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/spellcheck-64304
+[debug] [2025-04-23T11:04:57.804Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-04-23T11:04:57.805Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-04-23T11:05:07.813Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:05:07.813Z] Checked if tokens are valid: true, expires at: 1745409843097
+[debug] [2025-04-23T11:05:07.813Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-23T11:05:07.813Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/spellcheck-64304
+[debug] [2025-04-23T11:05:08.937Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-23T11:05:08.938Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/spellcheck-64304/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2025-04-23T11:06:32.366Z] Running command with virtualenv: command="C:\Users\tlfgq\OneDrive\vscode_eng_2\spell_site\my-spellcheck-app\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2025-04-23T11:06:37.590Z] Error: spawn "C:\Users\tlfgq\OneDrive\vscode_eng_2\spell_site\my-spellcheck-app\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\tlfgq\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\tlfgq\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\tlfgq\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[error] 
+[error] Error: An unexpected error has occurred.
