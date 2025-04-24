@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md p-6">
-      <h1 className="text-2xl font-bold mb-4 text-black">맞춤법 검사기2</h1>
+      <h1 className="text-2xl font-bold mb-4 text-black">맞춤법 검사기3</h1>
 
         <textarea
           className="w-full h-40 border p-2 rounded resize-none placeholder-gray-600"
