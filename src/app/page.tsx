@@ -15,14 +15,21 @@ export default function Home() {
         },
         body: JSON.stringify({ text }),
       });
-
+  
+      if (!res.ok) {
+        const errorData = await res.json();
+        alert(`서버 오류: ${errorData.error || "알 수 없는 오류"}`);
+        return;
+      }
+  
       const data = await res.json();
-      setResult(data.result);  // 교정된 문장은 아래에 따로 표시
+      setResult(data.result);
     } catch (error) {
-      console.error('맞춤법 검사 중 오류 발생:', error);
-      setResult('⚠️ 서버와 통신에 실패했습니다.');
+      console.error('맞춤법 검사 중 에러 발생:', error);
+      alert('네트워크 오류가 발생했습니다.');
     }
   };
+  
 
   return (
     <main className="min-h-screen bg-gray-100 p-8">
